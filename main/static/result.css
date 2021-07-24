@@ -1,0 +1,210 @@
+
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GmarketSansBold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NEXON Lv1 Gothic OTF";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --middle-width: 800px;
+}
+
+.page_header{
+    padding: 0px 0px;
+    /* background-color:rgb(245, 245, 245); */
+}
+
+.page_header a{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: solid 3px currentColor;
+    border-radius: 6px;
+    background-color: #BF6A7A;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.page_header a:hover{
+    background-color: #f0899c;
+    transition: all 1s;
+}
+
+.result_header{
+    padding: 0px 0px;
+    /* background-color:rgb(245, 245, 245); */
+    
+}
+
+.head_total{
+    font-family: "GmarketSansBold";
+    text-align: center;
+    margin-bottom: 40px;
+    margin: 0 auto;
+    padding: 8px 30px 20px 30px;
+}
+
+.head_total h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "GmarketSansBold";
+}
+
+.result{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+}
+
+.area_custom{
+    padding:30px 10px;
+    /* 너비 최댓값 지정 */
+    max-width: 800px;
+    max-width: var(--middle-width);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+.box_inner_result{
+    /* padding: 0px 50px; */
+    border-bottom: 1px solid #efefef;
+}
+
+.img{
+    text-align: center;
+}
+
+.result_box{
+    /* padding: 0px 50px; */
+    flex: 0 0 50%;
+    margin:30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: solid 1px #ddd;
+    font-size: 16px;
+    font-family: "NEXON Lv1 Gothic OTF";
+}
+
+.info_more_title{
+    margin-left: 0.5vw;
+}
+
+.info_more_title img{
+    width:12px;
+}
+
+.info_name {
+    font-family: '양진체';
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.btn_more{
+    text-align: center;
+}
+
+.btn_more a{
+    font-family: "NEXON Lv1 Gothic OTF";
+    display: inline-block;
+    padding: 10px 20px;
+    border: solid 3px currentColor;
+    border-radius: 6px;
+    background-color: #BF6A7A;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.btn_more a:hover{
+    background-color: #f0899c;
+    transition: all 1s;
+}
+
+@media(min-width:280px) {
+    .head_total h1 {
+		font-size: 20px;
+	}
+
+	.head_total p {
+		font-size: 13px;
+	}
+}
+
+@media (min-width:281px) and (max-width: 375px) {
+    .head_total h1 {
+		font-size: 25px;
+	}
+
+	.head_total p {
+		font-size: 13px;
+	}
+}
+
+@media (min-width:375px) and (max-width:539px){
+    .head_total h1 {
+		font-size: 25px;
+	}
+
+	.head_total p {
+		font-size: 13px;
+	}
+}
+
+@media (min-width:540px) and (max-width:599px) {
+    .head_total h1 {
+        font-size: 30px;
+    }
+
+    .head_total a {
+        font-size: 18px;
+    }
+}
+
+@media(min-width:600px) and (max-width:799px) {
+    .head_total h1 {
+        font-size: 35px;
+    }
+
+    .head_total a {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:800px) {
+    .head_total h1 {
+        font-size: 40px;
+    }
+
+    .head_total a {
+        font-size: 18px;
+    }
+}
+
+body{font-size:16px;}
+

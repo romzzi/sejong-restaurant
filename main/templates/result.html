@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세종냠냠</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'reset.css' %}">
+</head>
+<body>
+    <header class="page_header">
+        <a href="/main/">HOME</a>
+    </header>
+    <div class="result_header">
+        <div class="head_total">
+            <h1>오늘 식사는 여기서?</h1>
+        </div>
+    </div>
+    <div class="result">
+        <div class="area_custom">
+            <div class="box_inner_result">
+                <div class="img">
+                    <!-- 여기서 메뉴 사진 url 적용 -->
+                    <img src="{{store.image_url}}" alt="" width="500vh">
+                </div>
+                <div class="result_box">
+                    <p class="info_title">
+                        <span class="info_name">{{store.name}}</span>
+                    </p>
+                    <div class="info_more_title">
+                        <br>
+                        <div>
+                            <img src="img/location.png" alt="">
+                            <span class="info_adress">{{store.address}}</span>
+                        </div>
+                        <br>
+                        <div class="info_menu">
+                            <img src="img/dollar.png" alt="">
+                            <span class="info_menu_price">
+                                얼마야? {{store.price}}
+                            </span>
+                        </div>
+                        <br>
+                        <div class="info_time">
+                            <img src="img/clock.png" alt="">
+                            <span class="info_time_header">영업시간 : </span>
+                            <span class="info_time_time">
+                                {{store.open_time}}
+                            </span>
+                        </div>
+                        <br>
+                        <div class="info_emotion">
+                            <img src="img/instagram.png" alt="">
+                            <span class="info_emotion_header">갬성 가득?</span>
+                            <span class="info_emotion_answer">{{store.emotion}}</span>
+                        </div>
+                        <br>
+                        <div class="info_with">
+                            <img src="img/user.png" alt="">
+                            <span class="info_with_header">누구랑 같이?</span>
+                            <span class="info_with_answer">{{store.who}}</span>
+                        </div>
+                        <br>
+                        <div class="info_drink">
+                            <img src="img/cheers.png" alt="">
+                            <span class="info_drink_header">반주 가능?</span>
+                            <span class="info_drink_answer">{{store.drink}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 더보기 버튼 -->
+            <div class="btn_more">
+                <a href="/vote/">다시 고르기</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

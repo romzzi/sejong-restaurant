@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <title>세종냠냠</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'test.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'reset.css' %}">
+</head>
+<body>
+    <header class="page_header">
+        <a href="/main/">HOME</a>
+        <!-- <h2>광진구 맛집 찾기</h2> -->
+    </header>
+    <section id="survey">
+        <div class="wrapper">
+            <form id="form">
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">1/4</h3>
+                        <h3 class="question">예쁜 음식이 나왔다. 가장 처음 드는 생각은?</h3>
+                    </div>
+                    <div class="answer">
+                        <label><input type="radio" name="emotion" value="True" ><span>어머 이건 찍어야해! 인스타에 올리기 위해 최대한 열심히 찍는다.</span></input></label>
+                    </div>
+                    <div class="answer">
+                        <label><input type="radio" name="emotion" value="False"><span>사진 찍을 새가 어딨어? 입에 욱여넣고 본다.</span></input></label>
+                    </div>
+
+                </div>
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">2/4</h3>
+                        <h3 class="question">피곤한 하루를 마치고 집으로 돌아가는 길. 배는 고프고...</h3>
+                    </div>
+                    <div class="answer">
+                        <label><input type="radio" name="drink" value="True"><span>수루수루루수루수루루술!!!!</span></input></label>
+                    </div>
+                    <div class="answer">
+                        <label><input type="radio" name="drink" value="False"><span>뭐? 술? 절레절레..</span></input></label>
+                    </div>
+
+                </div>
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">3/4</h3>
+                        <h3 class="question">밥을 먹으려는데 갑자기 핸드폰이 울렸다! 과연 누구일까?</h3>
+                    </div>
+                    <div class="answer">
+                        <label><input type="radio" name="who" value="연인" ><span>사랑하는 연인에게서 온 연락!</span></input></label>
+                    </div>
+                    <div class="answer">
+                        <label><input type="radio" name="who" value="친구"><span>우리는 평생 간다! 친구에게서 온 연락!</span></input></label>
+                    </div>
+                    <div class="answer">
+                        <label><input type="radio" name="who" value="혼자" ><span>인생은 원래 혼자다. 스팸 문자.</span></input></label>
+                    </div>
+
+                </div>
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">4/4</h3>
+                        <h3 class="question">뭘 먹을지 막 결정하고 지갑을 연 순간, 돈이 별로 없다! 당신의 선택은?</h3>
+                    </div>
+                    <div class="answer">
+                        <label><input type="radio" name="money" value="scrooge" ><span>하.. 돈이 없네.. 어쩔 수 없이 아껴야겠다..좀 더 저렴한 메뉴를 골라본다.</span></input></label>
+                    </div>
+                    <div class="answer">
+                        <label><input type="radio" name="money" value="yolo" ><span>미래의 나야 미안해! 지금을 즐길게! 먹고 싶은 메뉴를 사먹는다.</span></input></label>
+                    </div>
+                </div>
+<!--                <form action="/result/" method='post'>-->
+<!--                    {%csrf_token %}-->
+<!--                    {% for question in questions %}-->
+<!--                        <h3><p>{{question.number}}:{{question.content}}</p></h3>-->
+<!--                        {% for choice in question.choice_set.all %}-->
+<!--&lt;!&ndash;                    question에 연결되어있는 choice를 모두 가져오기&ndash;&gt;-->
+<!--                            <div>-->
+<!--                                <input type="radio" name="question-{{question.number}}" id="choice- -->
+<!--{{ choice.pk }}" value="{{ choice.restaurant.pk }}">-->
+<!--&lt;!&ndash;                                나중에 합산해서 어떤 레스토랑에 연결이 되는지 value값으로 결정이 됨&ndash;&gt;-->
+<!--                                <label for="choice-{{ choice.pk }}">{{ forloop.counter }}.-->
+<!--                                {{ choice.select }}</label>-->
+<!--                            </div>-->
+<!--                        {% endfor %}-->
+<!--                    <hr>-->
+<!--                    {% endfor %}-->
+<!--                    <input type="submit" value="맞춤 맛집 찾기">-->
+<!--                </form>-->
+                <div class="submit">
+                    <input type="submit" value="맞춤 맛집 찾기"
+                        href="/result/" method='post'>
+                        {% csrf_token %}
+                    </input>
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <script type="text/javascript" src="{% static 'js/test.js' %}"></script>
+</body>
+</html>

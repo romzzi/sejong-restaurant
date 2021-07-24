@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GmarketSansBold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NEXON Lv1 Gothic OTF";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    width:100%;
+    height: 100%;
+    font-family: "NEXON Lv1 Gothic OTF";
+    color:#000;
+}
+
+.page_header a{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: solid 3px currentColor;
+    border-radius: 6px;
+    background-color: #BF6A7A;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.page_header a:hover{
+    background-color: #f0899c;
+    transition: all 1s;
+}
+
+.page_header h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "NEXON Lv1 Gothic OTF";
+    font-size: 4vw;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+.test{
+    margin-bottom: 5vh;
+    margin-top: 7vh;
+}
+
+.number{
+    font-size: 24px;
+    font-family: 'EliceDigitalBaeum_Bold';
+    margin-bottom: 4vh;
+}
+
+.question{
+    font-size: 20px;
+    font-family: '양진체';
+    margin-bottom: 2vh;
+    position: static;
+    line-height: 1.5;
+}
+
+.answer{
+    font-family: "NEXON Lv1 Gothic OTF";
+    font-size: 16px;
+    margin-bottom: 2vh;
+    line-height: 1.3;
+}
+
+.submit{
+    text-align: center;
+}
+
+.submit input{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: solid 3px currentColor;
+    border-radius: 6px;
+    background-color: #BF6A7A;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 10vh;
+}
+
+.submit input:hover{
+    background-color: #f0899c;
+    transition: all 1s;
+}
