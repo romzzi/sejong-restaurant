@@ -7,10 +7,6 @@
 ### 사용 언어
 * django, html, css, javascript, SQLite3
 
-### 맡은 직무
-* 프론트엔드 100%
-* 백엔드 일부(프로젝트 생성, 데이터모델링, migration, admin, apps)
-
 ### 프로그램 소개
 
 #### 1. 메인페이지
